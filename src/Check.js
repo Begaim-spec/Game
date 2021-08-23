@@ -7,7 +7,6 @@ const Check = () => {
     const [freeAttempt, setFreeAttempt]= useState('3')
     const [count, setCount] = useState(0)
     const [zero, setZero] = useState(0)
-    const [ setPercent] = useState('')
      const [help, setHelp]= useState('')
     const handleNumber = (e) => {
         setGuess(e.target.value)
@@ -58,7 +57,7 @@ const Check = () => {
             }
             <div>счет {count}:{zero}</div>
             <button onClick={reStart}> Очистить счет</button>
-            <div onChange={handlePercent}>Процент побед и поражений {localStorage.getItem('band')}:{localStorage.getItem('score')}</div>
+            <div>Процент побед и поражений {localStorage.getItem('band')}:{localStorage.getItem('score')}</div>
             <div> Выберите режим игры
                 <label htmlFor="spoiler" onClick={helpingFor}> С подсказкой </label>
                 <input type="radio" id='spoiler' name='choose' onClick={helpingFor} />
