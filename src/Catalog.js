@@ -3,7 +3,7 @@ import dishes from './dishes'
 import Rating from "./Rating"
 
 const Catalog = () => {
-    const [products, setDishes] = useState(dishes)
+    const [products] = useState(dishes)
     return (
             <div className="row">
                     {products.map(item => (
@@ -25,4 +25,3 @@ const Catalog = () => {
     );
 };
 
-export default Catalog;

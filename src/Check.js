@@ -35,13 +35,8 @@ const Check = () => {
         setHelp('1. Значение принимает положительные, целые числа.' +
             ' 2. Введите число от 0 до 10', )
    }
-   const handlePercent = () => {
-        setPercent(localStorage.getItem('band'))
-   }
     const reStart = () => {
         localStorage.clear()
-        {localStorage.removeItem('band')}
-        {localStorage.removeItem('score')}
     }
     const reset = () => {
         setMessage('')
