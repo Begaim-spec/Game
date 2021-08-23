@@ -1,0 +1,37 @@
+body{
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px
+}
+
+.col-4{
+    width: 25%;
+    padding: 0 15px;
+}
+.box-icon{
+    padding: 34px;
+}
+img {
+    max-width: 100%;
+    width: 288px;
+    height: 192px;
+    border-radius: 70px 10px;
+}
+.desc{
+    width: 288px;
+}
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+span{
+    font-weight: bold;
+    font-size: 25px;
+}
+.star{
+   color: orangered;
+}
